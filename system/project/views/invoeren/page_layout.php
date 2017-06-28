@@ -1,5 +1,6 @@
-<div class="homepage">
+<?php
 
-<?php echo $form; ?>
+ echo $form; 
 
-</div>
+?>
+
