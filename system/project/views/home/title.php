@@ -4,61 +4,69 @@
 			<h2>Wat gaan we doen?</h2>
 				<div class="container">
 				    <div class="row">
-				        <div class="knop knop1 col-sm-6">
-				        <a href="<?php echo url::to('invoeren'); ?>">
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
-				        		<p>Boeking invoeren</p>
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
+
+				    	<a href="<?php echo url::to('invoeren'); ?>">
+					        <div class="knop knop1 col-sm-6">				        
+					        	<br>
+					        	<br>
+					        	<br>
+					        	<br>
+					        		<p>Boeking invoeren</p>
+					        	<br>
+					        	<br>
+					        	<br>
+					        	<br>				        
+					        </div>
 				        </a>
-				        </div>
-				        <div class="knop knop2 col-sm-6">
+
 				        <a href="<?php echo url::to('opzoeken'); ?>">
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
-				        		<p>Boeking opzoeken</p>
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
-				        </a>
-				        </div>
-				    </div>
+					        <div class="knop knop2 col-sm-6">
+					           	<br>
+					        	<br>
+					        	<br>
+					        	<br>
+					        		<p>Boeking opzoeken</p>
+					        	<br>
+					        	<br>
+					        	<br>
+					        	<br>				        
+					        </div>
+					     </a>
+
+					</div>
+
+
 				    <div class="row">
-				        <div class="knop knop3 col-sm-6">
-				        <a href="<?php echo url::to('inzien'); ?>">
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
-				        		<p>Agenda bekijken</p>
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
+				    	<a href="<?php echo url::to('bekijken'); ?>">
+				        	<div class="knop knop3 col-sm-6">				       
+					        	<br>
+					        	<br>
+					        	<br>
+					        	<br>
+					        		<p>Agenda bekijken</p>
+					        	<br>
+					        	<br>
+					        	<br>
+					        	<br>
+				           </div>
 				        </a>
-				        </div>
-				        <div class="knop knop4 col-sm-6">
-				        <a>
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
-				        		<p>Klant opzoeken</p>
-				        	<br>
-				        	<br>
-				        	<br>
-				        	<br>
-				        </a>
-				        </div>
+
+				        <a href="<?php echo url::to('klant'); ?>">
+					        <div class="knop knop4 col-sm-6">				        
+					        	<br>
+					        	<br>
+					        	<br>
+					        	<br>
+					        		<p>Klant opzoeken</p>
+					        	<br>
+					        	<br>
+					        	<br>
+					        	<br>				        
+					        </div>
+					    </a>
+
 				    </div>
+				    
 				</div>
 		</div>
 	</div>
