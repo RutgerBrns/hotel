@@ -31,7 +31,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Achternaam" class="form-control"  type="text">
+  <input name="last_name" placeholder="Achternaam" class="form-control"  type="text" required>
     </div>
   </div>
 </div>
@@ -73,6 +73,19 @@
 </div>
 
 <!-- Text input-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Land</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="country" placeholder="Land" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
  
 <div class="form-group">
   <label class="col-md-4 control-label">Stad</label>  
@@ -109,7 +122,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-  <input name="incheck_date" class="form-control"  type="date">
+  <input name="incheck_date" class="form-control"  type="date" required>
     </div>
   </div>
 </div>
@@ -133,7 +146,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-  <input name="departure_date" class="form-control"  type="date">
+  <input name="departure_date" class="form-control"  type="date" required>
     </div>
   </div>
 </div>
@@ -142,19 +155,19 @@
 <!-- Select Basic -->
    
 <div class="form-group"> 
-  <label class="col-md-4 control-label">Apartement</label>
+  <label class="col-md-4 control-label">Appartement</label>
     <div class="col-md-3 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="apartment" class="form-control selectpicker" >
+    <select name="apartment" class="form-control selectpicker" required >
       <option value=" " >Selecteer het appartement</option>
-      <option>1</option>
-      <option>2</option>
-      <option >3</option>
-      <option >4</option>
-      <option >5</option>
-      <option >6</option>
-      <option >7</option>      
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>      
     </select>
   </div>
 </div>
@@ -225,7 +238,7 @@
 </fieldset>
 </form>
 </div>
-    </div><!-- /.container -->
+</div><!-- /.container -->
 
 
 <script type="text/javascript">
