@@ -35,8 +35,8 @@ class Booking_Model extends model
             LEFT JOIN `customer_has_booking`
             ON `booking`.`id` = `customer_has_booking`.`booking_id`
             LEFT JOIN `customer`
-            ON `customer_has_booking`.`customer_id` = `customer`.`booking_id`
-            WHERE `last_name` = ?
+            ON `customer_has_booking`.`customer_id` = `customer`.`id`
+            WHERE  `customer`.`last_name` = ?
         ";
         // run query and get result set
         $resultset = db::query($query, [$last_name]);
@@ -65,16 +65,16 @@ public static function getBookingByDate($checkin_date)
     }  
 
      //I AM TRYING TO BUILD AN INSERT QUERY HERE TO CREATE NEW TASKS.
-    public static function createCustomer($first_name, $last_name, $email, $phone, $address, $city, $zip, $country)
+    public static function createBooking($apartment_id, $checkin_date, $checkin_time, $departure_date, $adults, $kids, $breakfast, $comments)
     {
         // write query
         $query = "
-            INSERT INTO `customer` (first_name, last_name, email, phone, address, city, zip, country)
+            INSERT INTO `booking` (apartment_id, checkin_date, checkin_time, departure_date, adults, kids, breakfast, comments)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ";
 
         //let op dat de gegevens dienen te worden aangeleverd in een array vorm [variabelen]
-        db::query($query, [$first_name, $last_name, $email, $phone, $address, $city, $zip, $country]);      
+        db::query($query, [$apartment_id, $checkin_date, $checkin_time, $departure_date, $adults, $kids, $breakfast, $comments]);      
 
     }
 }
