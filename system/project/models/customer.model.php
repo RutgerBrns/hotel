@@ -9,7 +9,7 @@ class Customer_Model extends model
         // write query
         $query = "
             SELECT *
-            FROM `customers`
+            FROM `customer`
             WHERE 1
         ";
         // run query and get result set
