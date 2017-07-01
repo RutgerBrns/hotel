@@ -37,3 +37,7 @@
 </form>
 </div>
 </div><!-- /.container -->
+
+<?php foreach ($customers as $customer) : ?>
+  <?php echo $customer->last_name; ?>
+<?php endforeach; ?>
