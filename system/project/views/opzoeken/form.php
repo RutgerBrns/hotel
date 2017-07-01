@@ -50,7 +50,7 @@
           <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-            <input name="incheck_date" class="form-control"  type="date" required>
+            <input name="checkin_date" class="form-control"  type="date" required>
             </div>
           </div>
         </div>
