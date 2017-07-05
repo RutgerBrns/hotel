@@ -1,39 +1,82 @@
-.title-agenda {
-  text-align: center;
-}
-.knop {
-  border-radius: 5px;
-  border-color: white;
-  border-style: solid;
-  border-width: 3px;
-}
-.knop p {
-  color: white;
-}
-.knop1 {
-  background-color: #4087f2;
-}
-.knop2 {
-  background-color: #990b0b;
-}
-.knop3 {
-  background-color: #0b995b;
-}
-.knop4 {
-  background-color: #f0a428;
-}
-.knop1:hover {
-  background-color: rgba(64, 135, 242, 0.8);
-}
-.knop2:hover {
-  background-color: rgba(153, 11, 11, 0.8);
-}
-.knop3:hover {
-  background-color: rgba(11, 153, 91, 0.8);
-}
-.knop4:hover {
-  background-color: rgba(240, 164, 40, 0.8);
-}
 body {
-  background-color: red;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333333;
+}
+body a {
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: none;
+}
+.navbar {
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #dfcfc6;
+}
+.navbar .navbar-brand {
+  color: #dfcfc6;
+}
+.navbar .navbar-nav li a {
+  color: #8a9cda;
+}
+.navbar .navbar-nav li a:hover {
+  color: #ffffff;
+  background-color: #d7def3;
+}
+.navbar .navbar-btn {
+  background-color: #8a9cda;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.title-agenda {
+  width: 80%;
+  margin: auto;
+}
+.title-agenda .knop {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  color: #ffffff;
+  font-size: 20px;
+  transition: .5s;
+}
+.title-agenda .knop i {
+  padding-right: 4px;
+}
+.title-agenda .knop:hover {
+  font-size: 30px;
+}
+.title-agenda .knop1 {
+  background-color: #8a9cda;
+}
+.title-agenda .knop1:hover {
+  color: #8a9cda;
+  background-color: #d7def3;
+  box-shadow: 0px 0px 0px 5px #8a9cda inset;
+}
+.title-agenda .knop2 {
+  background-color: #6c878d;
+}
+.title-agenda .knop2:hover {
+  color: #6c878d;
+  background-color: #c2ced0;
+  box-shadow: 0px 0px 0px 5px #6c878d inset;
+}
+.title-agenda .knop3 {
+  background-color: #ff7481;
+}
+.title-agenda .knop3:hover {
+  color: #ff7481;
+  background-color: #ffdadd;
+  box-shadow: 0px 0px 0px 5px #ff7481 inset;
+}
+.title-agenda .knop4 {
+  background-color: #bca598;
+}
+.title-agenda .knop4:hover {
+  color: #bca598;
+  background-color: #e4dbd6;
+  box-shadow: 0px 0px 0px 5px #bca598 inset;
 }

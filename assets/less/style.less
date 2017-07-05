@@ -1,1 +1,32 @@
+// typography
+@first-font: 'Titillium Web', sans-serif;
+@second-font: 'Lora', serif;
+
+// color
+@first-color: #8A9CDA;
+@second-color: #6C878D;
+@third-color: #FF7481;
+@fourth-color: #BCA598;
+
+@navbar-color: #DFCFC6;
+@navbar-sub-color: @first-color;
+
+// font-color
+@first-font-color: #333;
+
+body{
+	font-family: @first-font;
+	color: @first-font-color;
+	a{
+		text-decoration: none;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+
+}
+
+@import "navigation-footer.less";
 @import "home.less";

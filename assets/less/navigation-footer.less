@@ -1,0 +1,29 @@
+.navbar{
+	border-radius: 0;
+	border: none;
+	border-bottom: 2px solid @navbar-color;
+
+	.navbar-brand{
+		color: @navbar-color;
+
+	}
+
+	.navbar-nav{
+		li{
+			a{
+				color: @navbar-sub-color;
+
+				&:hover{
+					color: #ffffff;
+					background-color: lighten(@navbar-sub-color, 20%);
+				}
+			}
+		}
+	}
+
+	.navbar-btn{
+		background-color: @navbar-sub-color;
+		color: #ffffff;
+		margin-left: 10px;
+	}
+}
