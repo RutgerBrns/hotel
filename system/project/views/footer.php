@@ -1,3 +1,3 @@
-<footer>
-    Leonardus Appartementen - 2017
+<footer class="text-center">
+    Leonardus Appartementen - <?php echo date("Y"); ?>
 </footer>

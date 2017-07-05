@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -17,15 +18,15 @@
 </head>
 <body>
 
-	<div class="container-fluid">
+
 
 	    <?php echo $top_navigation; ?>
 
 	    <?php echo $page_layout; ?>
 
 	    <?php echo $footer; ?>
-	    
-    </div>
+
+
 
 </body>
 </html>
