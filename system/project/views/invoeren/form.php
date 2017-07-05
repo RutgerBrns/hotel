@@ -122,7 +122,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-  <input name="incheck_date" class="form-control"  type="date" required>
+  <input name="checkin_date" class="form-control"  type="date" required>
     </div>
   </div>
 </div>
@@ -134,7 +134,7 @@
     <div class="col-md-3 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-  <input name="incheck_time" class="form-control"  type="time">
+  <input name="checkin_time" class="form-control"  type="time">
     </div>
   </div>
 </div>
@@ -159,7 +159,7 @@
     <div class="col-md-3 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="apartment" class="form-control selectpicker" required >
+    <select name="apartment_id" class="form-control selectpicker" required >
       <option value=" " >Selecteer het appartement</option>
       <option value="1">1</option>
       <option value="2">2</option>

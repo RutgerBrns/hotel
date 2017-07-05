@@ -9,13 +9,14 @@ class Booking_Model extends model
 {
     protected static $object_class = 'Booking_Object';
 
-    public static function formatDate($date) {
+    public static function formatDate($date)
+    {
 
         $date = date_create('');
         echo date_format($date, 'Y-m-d H:i:s');
     }
 
-   public static function getAllBooking()
+    public static function getAllBooking()
     {
         // write query
         $query = "
@@ -53,7 +54,7 @@ class Booking_Model extends model
         return $objects;
     }
 
-     public static function getBookingByCustomerLastName($last_name)
+    public static function getBookingByCustomerLastName($last_name)
     {
         // write query
         $query = "
@@ -74,7 +75,7 @@ class Booking_Model extends model
         return $objects;
     }
 
-public static function getBookingByDate($checkin_date)
+    public static function getBookingByDate($checkin_date)
     {
         // write query
         $query = "
@@ -84,14 +85,14 @@ public static function getBookingByDate($checkin_date)
         ";
         // run query and get result set
         $resultset = db::query($query, [$checkin_date]);
-        
+
         // retrieve all the rows as objects
         $objects = static::fetchObject($resultset);
 
         return $objects;
-    }  
+    }
 
-     //I AM TRYING TO BUILD AN INSERT QUERY HERE TO CREATE NEW TASKS.
+    //I AM TRYING TO BUILD AN INSERT QUERY HERE TO CREATE NEW TASKS.
     public static function createBooking($apartment_id, $checkin_date, $checkin_time, $departure_date, $adults, $kids, $breakfast, $comments)
     {
         // write query
@@ -101,7 +102,7 @@ public static function getBookingByDate($checkin_date)
         ";
 
         //let op dat de gegevens dienen te worden aangeleverd in een array vorm [variabelen]
-        db::query($query, [$apartment_id, $checkin_date, $checkin_time, $departure_date, $adults, $kids, $breakfast, $comments]);      
+        db::query($query, [$apartment_id, $checkin_date, $checkin_time, $departure_date, $adults, $kids, $breakfast, $comments]);
 
     }
 }

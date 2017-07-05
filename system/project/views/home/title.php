@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row row-centered">
-		<div class="col-md-12 title-agenda">
+		<div class="title-agenda">
 			<h2>Wat gaan we doen?</h2>
 				<div class="container">
 				    <div class="row">

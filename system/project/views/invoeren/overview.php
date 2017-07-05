@@ -109,7 +109,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-  <input name="incheck_date" value="<?php echo $incheck_date; ?>" class="form-control"  type="date">
+  <input name="checkin_date" value="<?php echo $checkin_date; ?>" class="form-control"  type="date">
     </div>
   </div>
 </div>
@@ -121,7 +121,7 @@
     <div class="col-md-3 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-  <input name="incheck_time" value="<?php echo $incheck_time; ?>" class="form-control"  type="time">
+  <input name="checkin_time" value="<?php echo $checkin_time; ?>" class="form-control"  type="time">
     </div>
   </div>
 </div>
@@ -146,8 +146,8 @@
     <div class="col-md-3 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="apartment" class="form-control selectpicker" >
-      <option value="<?php echo $apartment; ?>" ><strong>Apartement <?php echo $apartment; ?></strong></option>
+    <select name="apartment_id" class="form-control selectpicker" >
+      <option value="<?php echo $apartment_id; ?>" ><strong>Apartement <?php echo $apartment_id; ?></strong></option>
       <option>1</option>
       <option>2</option>
       <option >3</option>
@@ -218,7 +218,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >Definitief verzenden <span class="glyphicon glyphicon-send"></span></button>
+    <button type="submit" class="btn btn-warning" name="confirm">Definitief verzenden <span class="glyphicon glyphicon-send"></span></button>
   </div>
 </div>
 
